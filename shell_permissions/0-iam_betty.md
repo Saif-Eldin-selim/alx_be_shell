@@ -1,10 +1,6 @@
-su: user betty does not exist
-root@c1b29820a6c6:/# sudo useradd betty
-root@c1b29820a6c6:/# su betty
-$ 
-$ 
+root@11c4d61afea1:/# mkdir -p shell_permissions
+root@11c4d61afea1:/# chown betty:betty shell_permissions
+root@11c4d61afea1:/# su betty
+$ cd shell_permissions
+$ echo "su betty" > 0-iam_betty
 $ chmod +x 0-iam_betty
-chmod: changing permissions of '0-iam_betty': Operation not permitted
-$ 
-$ ^C
-$ 
